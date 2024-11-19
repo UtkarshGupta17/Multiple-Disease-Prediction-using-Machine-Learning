@@ -50,7 +50,7 @@ lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
 # sidebar
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction', [
-        'Disease Prediction',
+        'Symptom Based Prediction',
         'All In One',
         'Diabetes Prediction',
         'Heart disease Prediction',
@@ -266,7 +266,7 @@ if selected == 'All In One':
  
 
 # multiple disease prediction
-if selected == 'Disease Prediction': 
+if selected == 'Symptom Based Prediction': 
     
     # Create disease class and load ML model
     disease_model = DiseaseModel()

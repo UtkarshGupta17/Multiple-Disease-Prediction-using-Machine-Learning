@@ -7,7 +7,6 @@ import xgboost as xgb
 import joblib
 import gzip
 
-# Machine learning model: XGBoost 
 
 # import the dataset
 dataset_df = pd.read_csv('data/dataset.csv')
